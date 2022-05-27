@@ -20,7 +20,7 @@ const userCreateService = async ({
   if (emailConflict) {
     return "email";
   }
-  if (age > 18) {
+  if (age < 18) {
     return "age";
   }
 
