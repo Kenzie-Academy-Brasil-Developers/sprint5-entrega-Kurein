@@ -12,8 +12,17 @@ export class User {
   email: string;
 
   @Column()
+  age: number;
+
+  @Column()
   password: string;
 
   @Column()
   isAdm: boolean;
+
+  @Column()
+  created_at: Date;
+
+  @Column()
+  updated_at: Date;
 }
